@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Online Converter</title>
+</head>
+<body class="Converter">
+      <div class="Converter__container">
+            <div class="Converter__block">
+                  <h1>Online Converter</h1>
+                  <hr>
+                  <div class="Converter__convertion">
+                        <div class="Converter__amount">
+                              <div class="Converter__text">Amount</div>
+                              <input type="text" class="Converter__input" id="amount">
+                        </div>
+                        <div class="Converter__from-to">
+                              <div class="Converter__from">
+                                    <div class="Converter__text">From</div>
+                                    <select id="select-from" class="Converter__select" size="1">
+                                    </select>
+                              </div>
+                              <a href="#" class="Converter__reverse-btn" onclick="reverseValutes()"><img src="images/reverse.png" alt=""></a>
+                              <div class="Converter__to">
+                                    <div class="Converter__text">To</div>
+                                    <select id="select-to" class="Converter__select">
+                                    </select>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="Converter__wrapper">
+                        <div class="Converter__statistics statistics">
+                              <div class="statistics__USD down">
+                                    <div class="statistics__title">USD</div>
+                                    <div class="statistics__sub-title">American dollar</div>
+                                    <div class="statistics__value" id="valueUSD">--</div>
+                              </div>
+                              <div class="statistics__EUR up">
+                                    <div class="statistics__title">EUR</div>
+                                    <div class="statistics__sub-title">Euro</div>
+                                    <div class="statistics__value" id="valueEUR">--</div>
+                              </div>
+                        </div>
+                        <div class="Converter__btn-convert">
+                              <div class="Converter__result"></div>
+                              <button class="Converter__btn" onclick="convertValute()">Convert</button>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
